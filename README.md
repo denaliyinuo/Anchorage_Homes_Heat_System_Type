@@ -1,1 +1,3 @@
-# Anchorage_Homes_Heat_System_Type
+# Anchorage Single Family Home Energy System Type
+
+![image 15](/png/Figure_1.png)
