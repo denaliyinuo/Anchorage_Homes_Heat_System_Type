@@ -70,9 +70,13 @@ l_size = 12
 # gray = '#ECECEC'
 # gray = '#c0c0c0'
 gray = '#d3d3d3'
+gray = '#e0e0e0'
 
 colors = ['#e15759', '#f28e2b', '#edc948',
           '#59a14f', '#76b7b2', '#4e79a7', '#b07aa1']
+
+colors = ['#ea4335', '#a460dc', '#edc948',
+          '#34a853', '#76b7b2', '#4e79a7', '#4285f4']
 
 ax2.bar(year, count, color='#002746')
 
@@ -83,7 +87,7 @@ ax2.bar(year, count, color='#002746')
 ax1 = ax2.twinx()
 
 ax1.set_title(
-    'Anchorage Single-Family Homes\nEnergy System Type', size=18)
+    'Anchorage, AK\nSingle-Family Homes\nSpace Heat System Market Share', size=18)
 
 ax2.set_facecolor(gray)
 ax1.plot(year, elec_count / count, label='Electric',
@@ -109,7 +113,10 @@ plt.text(0.293, 0.4, 'New Homes', weight='bold', size=m_size,
 
 # plt.yticks(fontsize=l_size)
 ax2.set_yticks(np.arange(0, 9000, 1500))
-ax1.set_yticklabels(['0%', '20%', '40%', '60%', '80%', '100%'])
+ax2.set_yticklabels(np.arange(0, 9000, 1500), size=l_size)
+ax2.set_xticks(np.arange(1960, 2020, 5))
+ax2.set_xticklabels(np.arange(1960, 2020, 5), size=l_size)
+ax1.set_yticklabels(['0%', '20%', '40%', '60%', '80%', '100%'], size=l_size)
 ax1.grid(b=None, which='major', axis='y')
 ax2.set_ylim(0, 7500)
 ax1.set_ylim(0, 1)
@@ -117,7 +124,7 @@ ax2.set_xlim(1960 - 0.7, 2019 + 0.7)
 
 plt.text(0.05, 0.48, '    Annual\nNew Homes', weight='bold',
          transform=plt.gcf().transFigure)
-plt.text(0.905, 0.46, '   New Home\nEnergy System\n Annual Share', weight='bold',
+plt.text(0.91, 0.47, '    New Home\n  Heat System\n Annual Share', weight='bold',
          transform=plt.gcf().transFigure)
 
 # ax2.set_ylabel('Annual\nNew Homes', rotation='horizontal')
