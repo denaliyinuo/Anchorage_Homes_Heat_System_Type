@@ -60,11 +60,16 @@ for i in range(len(df)):
 
 # plot year built graph
 
-fig, ax2 = plt.subplots(sharex=True, figsize=(12, 6))
+fig, ax2 = plt.subplots(sharex=True, figsize=(14, 7))
 
 
 linewidth = 3
 m_size = 15
+l_size = 12
+# gray = '#a9a9a9'
+# gray = '#ECECEC'
+# gray = '#c0c0c0'
+gray = '#d3d3d3'
 
 colors = ['#e15759', '#f28e2b', '#edc948',
           '#59a14f', '#76b7b2', '#4e79a7', '#b07aa1']
@@ -77,8 +82,10 @@ ax2.bar(year, count, color='#002746')
 
 ax1 = ax2.twinx()
 
+ax1.set_title(
+    'Anchorage Single-Family Homes\nEnergy System Type', size=18)
 
-ax2.set_facecolor('#ECECEC')
+ax2.set_facecolor(gray)
 ax1.plot(year, elec_count / count, label='Electric',
          color=colors[0], linewidth=linewidth)
 ax1.plot(year, fa_count / count, label='Forced Air',
@@ -86,9 +93,7 @@ ax1.plot(year, fa_count / count, label='Forced Air',
 ax1.plot(year, hw_count / count, label='Hot Water',
          color=colors[6], linewidth=linewidth)
 ax1.plot(year, r_count / count, label='Radiant',
-         color=colors[2], linewidth=linewidth)
-
-ax1.legend()
+         color=colors[1], linewidth=linewidth)
 
 plt.text(0.15, 0.21, 'Electric', weight='bold', size=m_size,
          color=colors[0], transform=plt.gcf().transFigure)
@@ -97,9 +102,12 @@ plt.text(0.54, 0.8, 'Forced Air', weight='bold', size=m_size,
 plt.text(0.54, 0.34, 'Hot Water', weight='bold', size=m_size,
          color=colors[6], transform=plt.gcf().transFigure)
 plt.text(0.78, 0.28, 'Radiant', weight='bold', size=m_size,
-         color=colors[2], transform=plt.gcf().transFigure)
+         color=colors[1], transform=plt.gcf().transFigure)
+plt.text(0.293, 0.4, 'New Homes', weight='bold', size=m_size,
+         color='#002746', transform=plt.gcf().transFigure)
 
 
+# plt.yticks(fontsize=l_size)
 ax2.set_yticks(np.arange(0, 9000, 1500))
 ax1.set_yticklabels(['0%', '20%', '40%', '60%', '80%', '100%'])
 ax1.grid(b=None, which='major', axis='y')
@@ -107,14 +115,14 @@ ax2.set_ylim(0, 7500)
 ax1.set_ylim(0, 1)
 ax2.set_xlim(1960 - 0.7, 2019 + 0.7)
 
-# plt.text(0.01, 0.48, '    Annual\nNew Homes', fontsize=10,
-#          transform=plt.gcf().transFigure)
-# plt.text(0.905, 0.46, '   New Home\nEnergy System\n Annual Share', fontsize=10,
-#          transform=plt.gcf().transFigure)
+plt.text(0.05, 0.48, '    Annual\nNew Homes', weight='bold',
+         transform=plt.gcf().transFigure)
+plt.text(0.905, 0.46, '   New Home\nEnergy System\n Annual Share', weight='bold',
+         transform=plt.gcf().transFigure)
 
-ax2.set_ylabel('Annual\nNew Homes', rotation='horizontal')
-ax1.set_ylabel('New Home\nEnergy System\nAnnual Share',
-               rotation='horizontal', labelpad=10)
+# ax2.set_ylabel('Annual\nNew Homes', rotation='horizontal')
+# ax1.set_ylabel('New Home\nEnergy System\nAnnual Share',
+#                rotation='horizontal', labelpad=10)
 
 plt.show()
 
