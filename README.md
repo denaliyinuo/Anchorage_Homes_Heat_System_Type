@@ -13,4 +13,14 @@ Heating homes is typically done nearly year-round, and most commonly burn natura
 
 * **Electric** - Use baseboards to distribute heat, and have the same problems as hot water baseboards. Pros include quiet operation and low maintenance.
 
+Using public data from the Anchorage government, this project will evaluate the changes in the share of heating systems for new signle-family homes from 1960 to 2019.
+
+# Method
+
+The Municipality of Anchorage manages public data in a csv file for every single property in the city, including the type of heating system. Using python, the data was filtered based on the criteria of a single-family residential property. The share of each heating system type for every year was determined by summing the total number of each heating system and dividing it by the total number of new single-family homes for each year.
+
+# Results and Analysis
+
+
+
 ![image](/png/Figure_1.png)
