@@ -7,10 +7,10 @@ Heating homes is typically done nearly year-round, and most commonly burn natura
 
 * **Radiant** - Characterized by radiant floor heating, which is expensive to install, but is a very efficient way of distributing heat.
 
-* Forced Air - Uses ducts and vents to distribute hot air through the home. Can make occupants uncomfortable due to lack of moisture and can worsen allergies.
+* **Forced Air** - Uses ducts and vents to distribute hot air through the home. Can make occupants uncomfortable due to lack of moisture and can worsen allergies.
 
-* Hot Water - Hot water baseboards are installed along the base of walls. They are slow to increase the room temperature and are known to not evenly heat large-sized rooms.
+* **Hot Water** - Hot water baseboards are installed along the base of walls. They are slow to increase the room temperature and are known to not evenly heat large-sized rooms.
 
-* Electric - Use baseboards to distribute heat, and have the same problems as hot water baseboards. Pros include quiet operation and low maintenance.
+* **Electric** - Use baseboards to distribute heat, and have the same problems as hot water baseboards. Pros include quiet operation and low maintenance.
 
 ![image](/png/Figure_1.png)
