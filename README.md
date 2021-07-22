@@ -5,7 +5,7 @@
 Anchorage is a city of nearly 300,000 people located on the coast of southcentral Alaska with a subarctic climate. Homes in this city do not have air conditioners due to the mild summer temperatures, and typically rely on natural ventilation for the hottest summer days.
 Heating homes is typically done nearly year-round, and most commonly burn natural gas, with some homes using oil or electricity as the energy source for heating. Anchorage residential heating systems can be divided into four different categories.
 
-* Radiant - Characterized by radiant floor heating, which is expensive to install, but is a very efficient way of distributing heat.
+* **Radiant** - Characterized by radiant floor heating, which is expensive to install, but is a very efficient way of distributing heat.
 
 * Forced Air - Uses ducts and vents to distribute hot air through the home. Can make occupants uncomfortable due to lack of moisture and can worsen allergies.
 
