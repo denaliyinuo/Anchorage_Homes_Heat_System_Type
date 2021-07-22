@@ -1,4 +1,4 @@
-# Anchorage Single Family Home Energy System Type
+# Anchorage Single-Family Home Energy System Type
 
 # Overview
 
